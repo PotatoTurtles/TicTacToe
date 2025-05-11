@@ -1,0 +1,86 @@
+:root *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+}
+.middleContainer{
+    display: flex;
+    flex: 2 1 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 100vh;
+
+}
+.lContainer, .rContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    flex: 1 1 0;
+}
+.lContainer>div, .rContainer>div{
+    height: 40vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(129, 136, 146, 0.529);
+    gap: 2vh;
+}
+.lContainer>div>div, .rContainer>div>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+.tacContainer{
+    background-color: ghostwhite;
+    width: 50vw;
+    min-height: 50vw;
+
+    display: grid;
+    grid: repeat(3, 1fr) / repeat(3, 1fr);
+
+    font-size: 15vw;
+    text-align: center;
+
+}
+.b{
+    border-bottom: 2px solid black;
+}
+.t{
+    border-top: 2px solid black;
+}
+.l{
+    border-left: 2px solid black;
+}
+.r{
+    border-right: 2px solid black;
+}
+
+.tacBody:nth-child(2n){
+    background-color: rgb(219, 219, 219);
+}
+.tacBody:hover{
+    background-color: rgb(166, 215, 180);
+}
+button{
+    width: 5vw;
+    height: 3vh;
+    border-radius: 1.5vh;
+    border-color: transparent;
+    background-color: rgb(244, 67, 67);
+}
+button:hover{
+    background-color: rgb(222, 61, 61);
+}
